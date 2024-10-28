@@ -12,13 +12,13 @@ class CreateMediaTable extends Migration
             $table->bigIncrements('id');
             $table->string('model_type', 191);
             $table->unsignedBigInteger('model_id');
-            $table->char('uuid', 36)->nullable();
-            $table->string('collection_name', 100);
-            $table->string('name', 100);
-            $table->string('file_name', 100);
-            $table->string('mime_type', 100)->nullable();
-            $table->string('disk', 100);
-            $table->string('conversions_disk', 100)->nullable();
+            $table->char('uuid', 191)->nullable();
+            $table->string('collection_name', 191);
+            $table->string('name', 191);
+            $table->string('file_name', 191);
+            $table->string('mime_type', 191)->nullable();
+            $table->string('disk', 191);
+            $table->string('conversions_disk', 191)->nullable();
             $table->unsignedBigInteger('size');
             $table->text('manipulations'); // Changed from json to text
             $table->text('custom_properties'); // Changed from json to text
